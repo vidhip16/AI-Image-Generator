@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="logo-container">
+                <h1 class="main-title">AI Image Generator</h1>
+                <h2 class="description">This is an AI-powered image generator that creates images from scratch based on a text description.</h2>
+                <h3 class="subtitle">AI Generated Images</h3>
+                <p class="instruction">Enter the text in the below input bar and get the AI generated image related to the text.</p>
+            </div>
+            <div class="search-container">
+                <form class="search-box">
+                    <input id="input-value" 
+                           placeholder="Describe the image you want to generate..." 
+                           type="text"
+                           class="form-input">
+                    <button type="submit" class="image-generate-btn">
+                        Generate
+                    </button>
+                </form>
+            </div>
+            <div id="images-visible" class="image-container">
+                <p id="imageContainerText"></p>
+                <img id="generated-image" class="my-generated-image" src="" alt="Generated Image">
+                <a id="download-image-btn" class="download-btn" href="#" download="generated-image.png">Download Image</a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
